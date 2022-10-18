@@ -1,7 +1,7 @@
 ﻿//Дано число, обозначающее день недели. Выяснить, является ли номер дня недели выходным.
 
 Console.Clear();
-Console.WriteLine("Введите номер дня недели (от 1 до 7): ");
+Console.WriteLine("Введите номер дня недели (от 1 до 7): " ?? "0");
 int number = int.Parse(Console.ReadLine());
 
 if(number < 1 || number > 8)
